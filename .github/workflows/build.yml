@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Compile
-        run: g++-11 -g -Wall -Wextra -Wconversion -Wsign-conversion -O -std=c++20 main.cpp matrix.cpp
+        run: g++ -g -Wall -Wextra -Wconversion -Wsign-conversion -O -std=c++20 main.cpp matrix.cpp
       - name: Run
         run: |
           chmod u+x a.out
